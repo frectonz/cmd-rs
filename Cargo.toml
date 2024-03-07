@@ -1,0 +1,10 @@
+workspace = { members = ["cmd-derive"] }
+
+[package]
+name = "cmd-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cmd-derive = { version = "0.1.0", path = "cmd-derive" }
+rustyline = { version = "13.0.0", features = ["derive"] }
